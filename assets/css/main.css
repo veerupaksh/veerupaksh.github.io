@@ -3659,12 +3659,12 @@
 			}
 
 			#main > .posts > * {
-				width: 50%;
+				width: 33.33%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 50%;
+				width: 33.33%;
 			}
 
 			#main > .posts > article {
@@ -3679,23 +3679,23 @@
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 0;
+				#main > .posts > article:nth-child(3n - 1) {
+					border-right-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#main > .posts > article:nth-child(-n + 3) {
 					border-top-width: 0;
 				}
 
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
-					width: 50%;
+					width: 33.33%;
 				}
 
 				#main > .posts > * {
 					padding: 2.5rem;
-					width: 50%;
+					width: 33.33%;
 				}
 
 			}
@@ -3711,11 +3711,11 @@
 					width: 100%;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(3n - 1) {
 					border-left-width: 2px;
 				}
 
-				#main > .posts > article:nth-child(-n + 2) {
+				#main > .posts > article:nth-child(-n + 3) {
 					border-top-width: 2px;
 				}
 
@@ -3723,7 +3723,7 @@
 					border-left-width: 0;
 				}
 
-				#main > .posts > article:nth-child(-n + 1) {
+				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
 
