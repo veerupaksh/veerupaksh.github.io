@@ -140,15 +140,20 @@
 					.appendTo($wrapper);
 
 				// Change toggle styling once we've scrolled past the header.
-					$header.scrollex({
-						bottom: '5vh',
-						enter: function() {
-							$navPanelToggle.removeClass('alt');
-						},
-						leave: function() {
-							$navPanelToggle.addClass('alt');
-						}
-					});
+
+				$header.scrollex({
+					bottom: '0vh',
+					enter: function() {
+						$navPanelToggle.removeClass('alt');
+						$nav.removeClass('alt')
+						$main.removeClass('alt')
+					},
+					leave: function() {
+						$navPanelToggle.addClass('alt');
+						$nav.addClass('alt')
+						$main.addClass('alt')
+					}
+				});
 
 			// Panel.
 				$navPanel = $(
@@ -204,6 +209,7 @@
 						$navPanel
 							.css('transition', 'none');
 
+
 		// Intro.
 			var $intro = $('#intro');
 
@@ -239,6 +245,8 @@
 								$intro.removeClass('hidden');
 							}
 						});
+
+
 
 					});
 

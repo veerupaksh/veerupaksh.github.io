@@ -3411,6 +3411,7 @@
 
 /* Nav */
 
+
 	#nav {
 		color: #ffffff;
 		display: -moz-flex;
@@ -3424,7 +3425,7 @@
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		margin: 0 auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
@@ -3551,6 +3552,15 @@
 			margin-bottom: 0;
 		}
 
+		#nav.alt {
+			position: fixed;
+			top: 0;
+			left: 0;
+      right: 0;
+			background-color: rgba(0, 0, 0, 0.95);
+			z-index: 10000;
+		}
+
 		@media screen and (max-width: 980px) {
 
 			#nav {
@@ -3659,26 +3669,28 @@
 			}
 
 			#main > .posts > * {
-				width: 33.33%;
+				width: 33.3333333333%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 33.33%;
+				width: 33.3333333333%;
 			}
 
 			#main > .posts > article {
 				border-color: #eeeeee;
-				border-left-width: 2px;
+				border-left-width: 1px;
+				border-right-width: 1px;
+				border-bottom-width: 2px;
 				border-style: solid;
-				border-top-width: 2px;
+				border-top-width: 0;
 				text-align: center;
 			}
 
 				#main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
-
+/*
 				#main > .posts > article:nth-child(3n - 1) {
 					border-right-width: 0;
 				}
@@ -3686,7 +3698,7 @@
 				#main > .posts > article:nth-child(-n + 3) {
 					border-top-width: 0;
 				}
-
+*/
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
@@ -3711,6 +3723,7 @@
 					width: 100%;
 				}
 
+/*
 				#main > .posts > article:nth-child(3n - 1) {
 					border-left-width: 2px;
 				}
@@ -3726,6 +3739,7 @@
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
+*/
 
 				#main > .posts > article .image {
 					max-width: 25rem;
@@ -3751,6 +3765,10 @@
 
 		}
 
+		#main.alt {
+			margin: 4rem auto;
+		}
+
 /* Footer */
 
 	#footer {
@@ -3763,7 +3781,7 @@
 		color: #909498;
 		cursor: default;
 		position: relative;
-		margin: 0 auto;
+		margin: -4rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
@@ -4195,7 +4213,7 @@
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		margin: 8rem auto 8rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
