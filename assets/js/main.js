@@ -143,15 +143,17 @@
 
 				$header.scrollex({
 					bottom: '0vh',
+
 					enter: function() {
 						$navPanelToggle.removeClass('alt');
-						$nav.removeClass('alt')
-						$main.removeClass('alt')
+						$nav.removeClass('alt');
+						$main.removeClass('alt');
 					},
+
 					leave: function() {
 						$navPanelToggle.addClass('alt');
-						$nav.addClass('alt')
-						$main.addClass('alt')
+						$nav.addClass('alt');
+						$main.addClass('alt');
 					}
 				});
 
