@@ -3079,6 +3079,14 @@
 
 		}
 
+#wrapper_two {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	/* zoom: 0.8; */
+	/* transform: scale(0.8); */
+}
+
 /* Intro */
 
 	#intro {
@@ -3109,7 +3117,7 @@
 		text-align: center;
 		z-index: 1;
 		min-height: 100vh;
-		zoom: 80%;
+		/*zoom: 80%;*/
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3325,7 +3333,7 @@
 		position: relative;
 		text-align: center;
 		z-index: 2;
-		zoom: 80%;
+		/*zoom: 80%;*/
 		/*transform: scale(0.8);*/
 	}
 
@@ -3436,8 +3444,8 @@
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
-		zoom: 80%;
-		/*transform: scale(0.8);*/
+		/*zoom: 80%;*/
+		transform: scale(0.8);
 	}
 
 		#nav ul.divided li {
@@ -3560,6 +3568,7 @@
 
 		#nav.alt {
 			position: fixed;
+			/* margin: -1rem auto 0 auto; */
 			top: 0;
 			left: 0;
       right: 0;
@@ -3580,11 +3589,12 @@
 	#main {
 		background-color: #ffffff;
 		position: relative;
-		margin: 0 auto;
+		margin: -16rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
-		zoom: 80%;
+		/*zoom: 80%;*/
+		transform: scale(0.8);
 	}
 
 		#main > * {
@@ -3774,7 +3784,7 @@
 		}
 
 		#main.alt {
-			margin: 4rem auto;
+			margin: -16rem auto;
 		}
 
 /* Footer */
@@ -3793,7 +3803,8 @@
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
-		zoom: 80%;
+		/*zoom: 80%;*/
+		transform: scale(0.8);
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -4226,7 +4237,7 @@
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
-		zoom: 80%;
+		/*zoom: 80%;*/
 	}
 
 		#copyright input, #copyright select, #copyright textarea {

@@ -15,6 +15,7 @@
 		xxsmall: '(max-width: 360px)'
 	});
 
+
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
@@ -142,7 +143,7 @@
 				// Change toggle styling once we've scrolled past the header.
 
 				$header.scrollex({
-					bottom: '0vh',
+					bottom: '-1.5vh',
 
 					enter: function() {
 						$navPanelToggle.removeClass('alt');
